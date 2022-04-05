@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="253">
+  <defs>
+    <clipPath id="a">
+      <path d="M0 0h167v253H0z"/>
+    </clipPath>
+  </defs>
+  <g data-name="iPhone 6, 7, 8 Plus – 2" clip-path="url(#a)">
+    <path d="M0 0h167v253H0z"/>
+    <text transform="translate(75 57)" fill="#fff" font-size="61" font-family="BodoniSvtyTwoITCTT-Book, 'Bodoni \37 2'">
+      <tspan x="0" y="0">Iris</tspan>
+    </text>
+    <text transform="rotate(90 22.5 86.5)" fill="#fff" font-size="61" font-family="BodoniSvtyTwoITCTT-Book, 'Bodoni \37 2'">
+      <tspan x="0" y="0">Tamara</tspan>
+    </text>
+    <text transform="rotate(180 49 104.5)" fill="#fff" font-size="63" font-family="BodoniSvtyTwoITCTT-Book, 'Bodoni \37 2'">
+      <tspan x="0" y="0">van</tspan>
+    </text>
+    <text transform="rotate(-90 132.5 67.5)" fill="#fff" font-size="67" font-family="BodoniSvtyTwoITCTT-Book, 'Bodoni \37 2'">
+      <tspan x="0" y="0">Ollefen</tspan>
+    </text>
+  </g>
+</svg>
