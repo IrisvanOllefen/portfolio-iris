@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image'
 import Link from 'next/link'
+import classNames from 'classnames'
 
 import styles from './AppHeader.module.css'
 
