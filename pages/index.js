@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 import AppHeader from '../components/AppHeader'
 import Introduction from '../components/Introduction'
@@ -10,12 +9,12 @@ import AppFooter from '../components/AppFooter'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Portfolio Iris</title>
       </Head>
       <AppHeader />
-      <main className={styles.main}>
+      <main>
         <Introduction />
         <MoreAboutMe />
         <JobCollection />
