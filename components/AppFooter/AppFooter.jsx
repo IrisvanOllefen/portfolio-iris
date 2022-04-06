@@ -8,7 +8,12 @@ export default function AppFooter() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <Image src='/images/black-logo.svg' width='75' height='120' />
+        <Image
+          src='/images/black-logo.svg'
+          width='75'
+          height='120'
+          className={styles.image}
+        />
         <ul className={styles.links}>
           <li>
             <Link href='https://twitter.com/irisvanollefen'>
