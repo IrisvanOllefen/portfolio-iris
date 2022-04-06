@@ -14,6 +14,19 @@ const QUERY = `query MyQuery {
     name
     href
   }
+  introduction {
+    title
+    subtitle
+    image {
+      responsiveImage {
+        src
+        srcSet
+        webpSrcSet
+        width
+        height
+      }
+    }
+  }
 }
 `
 
@@ -34,12 +47,12 @@ export default function Home({ data }) {
       </Head>
       <AppHeader data={data} />
       <main>
-        <Introduction />
+        <Introduction data={data} />
         <MoreAboutMe />
         <JobCollection />
         <MyWork />
       </main>
-      <AppFooter />
+      <AppFooter data={data} />
     </div>
   )
 }

@@ -12,3 +12,12 @@
 .image {
   border-radius: 50%;
 }
+
+.container h1 {
+  padding-top: 2rem;
+  line-height: 0.5;
+}
+
+.container h2 {
+  line-height: 0;
+}
