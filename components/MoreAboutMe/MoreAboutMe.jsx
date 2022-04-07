@@ -8,7 +8,6 @@ import Image from 'next/image'
 import styles from './MoreAboutMe.module.css'
 
 export default function MoreAboutMe({ data }) {
-  console.log(data)
   return (
     <div className={styles.container}>
       <div className='section'>

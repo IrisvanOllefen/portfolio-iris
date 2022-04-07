@@ -33,6 +33,40 @@ const QUERY = `query MyQuery {
       value
     }
   }
+  jobCollection {
+    jobCard {
+      title
+      description {
+        value
+      }
+      list {
+        title
+        listItem {
+          title
+        }
+      }
+    }
+  }
+  workCollection {
+    workCard {
+      title
+      subtitle
+      typeOfProject
+      image {
+        responsiveImage {
+          webpSrcSet
+        }
+      }
+      link {
+        title
+        href
+      }
+      focusPoints
+      content {
+        value
+      }
+    }
+  }
 }
 `
 
@@ -55,8 +89,8 @@ export default function Home({ data }) {
       <main>
         <Introduction data={data} />
         <MoreAboutMe data={data} />
-        <JobCollection />
-        <MyWork />
+        <JobCollection data={data} />
+        <MyWork data={data} />
       </main>
       <AppFooter data={data} />
     </div>
