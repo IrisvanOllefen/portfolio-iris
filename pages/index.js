@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { request } from '../lib/datocms'
 
 import AppHeader from '../components/AppHeader'
-import SocialLink from '../components/SocialLink'
 import Introduction from '../components/Introduction'
 import MoreAboutMe from '../components/MoreAboutMe'
 import JobCollection from '../components/JobCollection'
@@ -13,6 +12,12 @@ const QUERY = `query MyQuery {
   allSocialLinks {
     name
     href
+    icon {
+      responsiveImage {
+        webpSrcSet
+      }
+      url
+    }
   }
   introduction {
     title
@@ -53,6 +58,7 @@ const QUERY = `query MyQuery {
       subtitle
       typeOfProject
       image {
+        id
         responsiveImage {
           webpSrcSet
         }

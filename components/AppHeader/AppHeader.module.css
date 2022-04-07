@@ -6,7 +6,6 @@
 
 .links {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 25%;
+  justify-content: space-between;
 }

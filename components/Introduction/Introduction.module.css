@@ -7,6 +7,14 @@
 
 .image-wrapper {
   margin: 2rem;
+  margin-top: 4rem;
+  border-radius: 50%;
+  animation: grow;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  position: relative;
 }
 
 .image {
@@ -15,4 +23,13 @@
 
 .container h1 {
   padding-top: 2rem;
+}
+
+@keyframes grow {
+  0% {
+    padding-left: 10rem;
+  }
+  100% {
+    padding-right: 10rem;
+  }
 }

@@ -10,23 +10,24 @@ export default function AppFooter({ data }) {
       <div className={styles.container}>
         <Image
           src='/images/black-logo.svg'
-          width='75'
-          height='120'
+          width='60'
+          height='100'
           className={styles.image}
         />
         <ul className={styles.links}>
           {data.allSocialLinks.map((item) => {
             return (
               <SocialLink
-                key={item.name}
-                socialName={item.name}
                 socialLink={item.href}
+                socialIcon={item.icon.url}
+                className={styles.link}
+                key={item.name}
               />
             )
           })}
         </ul>
+        <p className={styles.copyright}>Copyright by Iris van Ollefen 2022</p>
       </div>
-      <p className={styles.copyright}>Copyright by Iris van Ollefen 2022</p>
     </footer>
   )
 }
