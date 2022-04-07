@@ -6,7 +6,6 @@ import Image from 'next/image'
 import styles from './Introduction.module.css'
 
 export default function Introduction({ data }) {
-  console.log(data.introduction.image.responsiveImage.webpSrcSet)
   return (
     <div className={classNames('container', styles.container)}>
       <h1>{data.introduction.title}</h1>

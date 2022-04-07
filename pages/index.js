@@ -27,6 +27,12 @@ const QUERY = `query MyQuery {
       }
     }
   }
+  moreAboutMe {
+    title
+    text {
+      value
+    }
+  }
 }
 `
 
@@ -48,7 +54,7 @@ export default function Home({ data }) {
       <AppHeader data={data} />
       <main>
         <Introduction data={data} />
-        <MoreAboutMe />
+        <MoreAboutMe data={data} />
         <JobCollection />
         <MyWork />
       </main>
