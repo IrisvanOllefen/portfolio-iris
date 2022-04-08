@@ -5,11 +5,11 @@ import styles from './JobCollection.module.css'
 
 export default function JobCollection({ data }) {
   return (
-    <div>
+    <>
       <div className={styles.background}></div>
       <div className={classNames('container', styles.container)}>
         <JobCard data={data.jobCollection} />
       </div>
-    </div>
+    </>
   )
 }

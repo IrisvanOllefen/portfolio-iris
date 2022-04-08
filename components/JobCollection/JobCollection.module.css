@@ -1,13 +1,13 @@
+.background {
+  background-color: var(--blue);
+  height: 30rem;
+  z-index: -999;
+  box-shadow: var(--background-shadow);
+}
+
 .container {
   text-align: center;
   z-index: 100;
   position: relative;
-  margin-top: -20rem;
-}
-
-.background {
-  background-color: #0169a5b2;
-  height: 300px;
-  z-index: -999;
-  box-shadow: -20px 50px 40px rgb(216, 216, 216);
+  margin-top: -25rem;
 }

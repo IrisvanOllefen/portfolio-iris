@@ -11,13 +11,11 @@ export default function AppHeader({ data }) {
       <ul className={styles.links}>
         {data.allSocialLinks.map((item) => {
           return (
-            <span key={item.name} className={styles.link}>
-              <SocialLink
-                socialLink={item.href}
-                socialIcon={item.icon.url}
-                key={item.name}
-              />
-            </span>
+            <SocialLink
+              key={item.name}
+              socialLink={item.href}
+              socialIcon={item.icon.url}
+            />
           )
         })}
       </ul>

@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
 import { StructuredText } from 'react-datocms'
@@ -12,9 +13,9 @@ export default function MyWorkCard({ data }) {
         return (
           <>
             <div key={item} className={styles['title-image-section']}>
-              <h4>{item.title}</h4>
-              <h5>{item.subtitle}</h5>
-              <h6>{item.typeOfProject}</h6>
+              <h4 className='grey'>{item.title}</h4>
+              <h5 className='grey'>{item.subtitle}</h5>
+              <h6 className='grey'>{item.typeOfProject}</h6>
               <Image
                 src={item.image.responsiveImage.webpSrcSet}
                 width='300'
@@ -26,12 +27,14 @@ export default function MyWorkCard({ data }) {
               {item.link.map((linkItem) => {
                 return (
                   <Link href={linkItem.href} key={linkItem.title}>
-                    <a>{linkItem.title}</a>
+                    <a className={classNames('a', 'grey')}>{linkItem.title}</a>
                   </Link>
                 )
               })}
-              <h6>{item.focusPoints}</h6>
-              <StructuredText data={item.content} />
+              <h6 className='grey'>{item.focusPoints}</h6>
+              <span className='grey'>
+                <StructuredText data={item.content} />
+              </span>
             </div>
           </>
         )

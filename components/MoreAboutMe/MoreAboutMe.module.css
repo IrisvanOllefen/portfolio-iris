@@ -1,16 +1,14 @@
 .container {
   text-align: center;
-  /* background-color: rgb(255, 249, 220); */
-  background-color: #0169a5b2;
-  color: white;
+  background-color: var(--blue);
 }
 
 .container h3 {
-  padding-bottom: 1.5rem;
+  padding: 4rem 2rem;
 }
 
 .container p {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .icon {
@@ -24,9 +22,9 @@
 
 @keyframes grow {
   0% {
-    top: -10px;
+    top: -1rem;
   }
   100% {
-    top: 10px;
+    top: 1rem;
   }
 }

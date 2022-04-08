@@ -1,20 +1,19 @@
+.background {
+  background-color: var(--blue);
+  height: 25rem;
+  z-index: -999;
+  margin-top: -30rem;
+}
+
 .container {
-  background-color: #0169a5b2;
-  box-shadow: -20px 50px 40px rgb(216, 216, 216);
+  background-color: var(--blue);
+  box-shadow: var(--background-shadow);
 }
 
 .container h3 {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 0;
-  color: white;
-  font-size: 42px;
+  font-size: 4.2rem;
   font-weight: 550;
-}
-
-.background {
-  background-color: #0169a5b2;
-  height: 200px;
-  z-index: -999;
-  margin-top: -17rem;
 }
