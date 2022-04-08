@@ -9,11 +9,18 @@ import styles from './MoreAboutMe.module.css'
 
 export default function MoreAboutMe({ data }) {
   return (
-    <div className={styles.container}>
-      <div className='section'>
-        <h3>{data.moreAboutMe.title}</h3>
-        <StructuredText data={data.moreAboutMe.text} />
-        <Image src='/icons/chevrons-down.svg' width='30' height='30' />
+    <div className={styles.background}>
+      <div className={styles.container}>
+        <div className='section'>
+          <h3>{data.moreAboutMe.title}</h3>
+          <StructuredText data={data.moreAboutMe.text} />
+          <Image
+            src='/icons/chevrons-down.svg'
+            width='30'
+            height='30'
+            className={styles.icon}
+          />
+        </div>
       </div>
     </div>
   )

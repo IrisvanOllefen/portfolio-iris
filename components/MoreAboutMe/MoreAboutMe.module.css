@@ -1,7 +1,8 @@
 .container {
   text-align: center;
-  background-color: rgb(255, 249, 220);
-  box-shadow: -10px 0px 40px rgb(216, 216, 216);
+  /* background-color: rgb(255, 249, 220); */
+  background-color: #0169a5b2;
+  color: white;
 }
 
 .container h3 {
@@ -10,4 +11,22 @@
 
 .container p {
   padding-bottom: 2rem;
+}
+
+.icon {
+  animation: grow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes grow {
+  0% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
 }

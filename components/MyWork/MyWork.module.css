@@ -1,10 +1,20 @@
 .container {
-  background-color: rgb(255, 249, 220);
-  box-shadow: -10px 0px 40px rgb(216, 216, 216);
+  background-color: #0169a5b2;
+  box-shadow: -20px 50px 40px rgb(216, 216, 216);
 }
 
 .container h3 {
   text-align: center;
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
+  color: white;
+  font-size: 42px;
+  font-weight: 550;
+}
+
+.background {
+  background-color: #0169a5b2;
+  height: 200px;
+  z-index: -999;
+  margin-top: -17rem;
 }
