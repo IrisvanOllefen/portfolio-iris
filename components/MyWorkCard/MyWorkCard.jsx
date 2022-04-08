@@ -18,8 +18,8 @@ export default function MyWorkCard({ data }) {
               <h6 className='grey'>{item.typeOfProject}</h6>
               <Image
                 src={item.image.responsiveImage.webpSrcSet}
-                width='300'
-                height='200'
+                width='400'
+                height='250'
                 className={styles.image}
               />
             </div>
