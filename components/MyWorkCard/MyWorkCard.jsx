@@ -2,7 +2,7 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
-import { StructuredText } from 'react-datocms'
+import { StructuredText } from '../datocms-client'
 
 import styles from './MyWorkCard.module.css'
 
@@ -26,8 +26,11 @@ export default function MyWorkCard({ data }) {
             <div className={styles['extra-info-section']}>
               {item.link.map((linkItem) => {
                 return (
-                  <Link href={linkItem.href} key={linkItem.title}>
-                    <a className={classNames('a', 'grey')}>{linkItem.title}</a>
+                  <Link
+                    href={linkItem.href}
+                    key={linkItem.title}
+                    className={classNames('a', 'grey')}>
+                    {linkItem.title}
                   </Link>
                 )
               })}
