@@ -6,9 +6,7 @@ export default function SocialLink({ socialLink, socialIcon }) {
   return (
     <li>
       <Link href={socialLink}>
-        <a>
-          <Image src={socialIcon} width='20' height='20' />
-        </a>
+        <Image src={socialIcon} width='20' height='20' />
       </Link>
     </li>
   )
