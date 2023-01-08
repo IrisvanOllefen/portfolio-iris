@@ -2,7 +2,7 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import Link from 'next/link'
-import { StructuredText } from 'react-datocms'
+import { StructuredText } from '../datocms-client'
 
 import styles from './MyWorkCard.module.css'
 

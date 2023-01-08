@@ -1,4 +1,4 @@
-import { StructuredText } from 'react-datocms'
+import { StructuredText } from '../datocms-client'
 
 import styles from './JobCard.module.css'
 

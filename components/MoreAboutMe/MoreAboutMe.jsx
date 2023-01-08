@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-import { StructuredText } from 'react-datocms'
+import { StructuredText } from '../datocms-client'
 
 import Image from 'next/image'
 import styles from './MoreAboutMe.module.css'
